@@ -4,6 +4,7 @@ import { HiMiniBars2 } from "react-icons/hi2";
 import { GrClose } from "react-icons/gr";
 import Image from "next/image";
 import Logo from "@/assets/images/IGEM-Ashesi2024.png";
+import Link from "next/link";
 
 function Navbar(): JSX.Element {
   const [isShow, setShow] = useState<boolean>(false);
@@ -14,14 +15,14 @@ function Navbar(): JSX.Element {
 
   return (
     <header className=" z-[99] bg-transparent backdrop-blur-lg relative w-full h-[1.8cm] flex justify-between items-center px-5">
-      <div className=" h-full justify-center items-center flex ">
+      <Link href={'/'} className=" h-full justify-center items-center flex ">
         <Image
           src={Logo}
           width={270}
           height={100}
           alt="iGEMxAshesi-logo"
         />
-      </div>
+      </Link>
 
       {/* Desktop Navigation */}
       <nav className="hidden  650px:flex flex-row">
