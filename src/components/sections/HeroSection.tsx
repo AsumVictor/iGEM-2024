@@ -5,6 +5,8 @@ import Image from "next/image";
 import waste_hero from '@/assets/images/plastic_waste_hero.png'
 
 function HeroSection(): JSX.Element {
+    
+
   return (
     <section className="green-dotted-bg w-full overflow-y-hidden 1240px:h-[100vh] py-20 1240px:py-0 flex justify-center items-center overflow-x-hidden">
       <div className="w-full flex gap-10 flex-col 1240px:flex-row justify-center px-5 400px:px-10 550px:px-20">
