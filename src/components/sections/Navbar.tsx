@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HiMiniBars2 } from "react-icons/hi2";
 import { GrClose } from "react-icons/gr";
 import Image from "next/image";
@@ -13,15 +13,30 @@ function Navbar(): JSX.Element {
     setShow((prev: boolean) => !prev);
   };
 
+  const [scrollY, setScrollY] = useState(0);
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  console.log(scrollY);
+
   return (
-    <header className=" z-[99] bg-transparent relative w-full h-[1.8cm] flex justify-between items-center px-5">
-      <Link href={'/'} className=" h-full justify-center items-center flex ">
-        <Image
-          src={Logo}
-          width={270}
-          height={100}
-          alt="iGEMxAshesi-logo"
-        />
+    <header
+      className={`${
+        scrollY > 150 ? "bg-white" : "bg-transparent"
+      } z-[99]  w-full h-[1.8cm] flex justify-between items-center px-2 400px:px-5 sticky top-0 `}
+    >
+      <Link href={"/"} className=" h-full justify-center items-center flex ">
+        <Image src={Logo} width={270} height={100} alt="iGEMxAshesi-logo" />
       </Link>
 
       {/* Desktop Navigation */}
