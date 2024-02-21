@@ -3,8 +3,8 @@ import plasticWaste from "@/assets/images/plasttic waste.jpg";
 
 function ProblemSpace(): JSX.Element {
   return (
-    <section className="mt-10 py-20 flex gap-3 1200px:grid grid-cols-2">
-      <div className="  w-full flex justify-center items-center">
+    <section className="mt-10 py-20 gap-3 grid 750px:grid-cols-2">
+      <div className="  w-full flex justify-center items-start">
         <Image src={plasticWaste} height={3} width={600} alt=" Image" />
       </div>
       <div className="w-full flex flex-col justify-start items-center px-4">
@@ -19,17 +19,38 @@ function ProblemSpace(): JSX.Element {
           bacterium Vibrio natriegens, to degrade plastic (PET) and to induce
           biocementation through the hydrolysis of urea respectively.
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-          placeat rerum et? Fugiat ipsa adipisci, ullam inventore aut blanditiis
-          laborum? Quam recusandae voluptatibus provident ipsa at facere placeat
-          deleniti officiis?
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-          placeat rerum et? Fugiat ipsa adipisci, ullam inventore aut blanditiis
-          laborum? Quam recusandae voluptatibus provident ipsa at facere placeat
-          deleniti officiis?
-          <br />
-         
+          <ul className=" mt-2">
+            <li className=" flex flex-row flex-wrap gap-2 items-center">
+              <div className="h-[0.4cm] w-[0.4cm] bg-primary_brown"></div>
+              <span> 8 million tons of plastic enter the ocean annually</span>
+            </li>
+            <li className=" flex flex-row flex-wrap gap-2 items-center">
+              <div className="h-[0.4cm] w-[0.4cm] bg-primary_brown"></div>
+              <span>
+                By 2050, there could be more plastic than fish in the sea.
+              </span>
+            </li>
+            <li className=" flex flex-row flex-wrap gap-2 items-center">
+              <div className="h-[0.4cm] w-[0.4cm] bg-primary_brown"></div>
+              <span>
+                Over 40% of the world's coastlines are affected by
+                erosion
+              </span>
+            </li>
+          </ul> However, 
+          <ul className=" mt-2">
+            <li className=" flex flex-row flex-wrap gap-2 items-center">
+              <div className="h-[0.4cm] w-[0.4cm] bg-primary_blue"></div>
+              <span> Vibrio natriegens has shown promise in degrading PET plastic in laboratory studies</span>
+            </li>
+            <li className=" flex flex-row flex-wrap gap-2 items-center">
+              <div className="h-[0.4cm] w-[0.4cm] bg-primary_blue"></div>
+              <span>
+              Biocementation using microbes offers a sustainable and eco-friendly alternative to traditional concrete.
+              </span>
+            </li>
+            
+          </ul>
         </p>
       </div>
     </section>
