@@ -1,5 +1,6 @@
 import Image from "next/image";
 import plasticWaste from "@/assets/images/plasttic waste.jpg";
+import { problem_statement } from "../config";
 
 function ProblemSpace(): JSX.Element {
   return (
@@ -12,12 +13,13 @@ function ProblemSpace(): JSX.Element {
           What problems do we hope to solve?
         </h2>
         <p className=" text-justify poppins-regular mt-5">
-          We seek to solve the problem of plastic pollution on the beach and in
+            {problem_statement}
+          {/* We seek to solve the problem of plastic pollution on the beach and in
           the sea as well as coastal erosion. The aim of our project is to
           create a bio-brick from the processes of plastic degradation and
           biocementation. To achieve this we hope to engineer a series of the
           bacterium Vibrio natriegens, to degrade plastic (PET) and to induce
-          biocementation through the hydrolysis of urea respectively.
+          biocementation through the hydrolysis of urea respectively. */}
           <br />
           <ul className=" mt-2">
             <li className=" flex flex-row flex-wrap gap-2 items-center">

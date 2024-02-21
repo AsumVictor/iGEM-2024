@@ -45,3 +45,5 @@ export const team_members: {
     },
   ],
 };
+
+export const problem_statement: string = `Our oceans are dealing with two major threats - they are filling up with plastic waste and the coasts are eroding away. This harmful combination is harming ocean life but also disrupting ecosystems and putting coastal towns in danger. The solutions we have now aren't working well enough. Plastic trash keeps accumulating, and the usual methods to stop erosion are costly, ugly, and harmful to the environment.`;

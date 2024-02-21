@@ -33,7 +33,7 @@ function StoryHeading() {
   return (
     <section className="relative w-full overflow-y-hidden h-[100vh] py-20 1240px:py-0 mt-[-1.8cm] flex justify-center items-center overflow-x-hidden ">
       <div className="w-full h-full absolute top-0 left-0">
-        <video ref={videoRef} muted autoPlay loop className=" video">
+        <video ref={videoRef} muted autoPlay loop playsInline className=" video">
           <source src="/Trim_.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
