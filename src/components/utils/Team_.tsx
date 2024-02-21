@@ -2,18 +2,11 @@ import Image from "next/image";
 import React from "react";
 import { Team } from "../types";
 
-type TeamName =
-  | "lab team"
-  | "wiki team"
-  | "modelling team"
-  | "engineering team"
-  | "entrepreneurship team";
-
 export default function TeamMembers({
   teamType,
   members,
 }: {
-  teamType: TeamName;
+  teamType: string;
   members: Team[];
 }) {
   return (
@@ -25,7 +18,7 @@ export default function TeamMembers({
   );
 }
 
-function Team({ member, teamName }: { member: Team; teamName: TeamName }) {
+function Team({ member, teamName }: { member: Team; teamName: string }) {
   return (
     <div className=" w-full 400px:w-[9cm] flex flex-col justify-center items-center">
       <Image
