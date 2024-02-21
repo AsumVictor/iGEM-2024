@@ -1,5 +1,6 @@
 import Navbar from '@/components/sections/Navbar'
 import HeroSection from '@/components/sections/HeroSection'
+import ProblemSpace from '@/components/sections/ProblemSpace'
 
 export default function Home() {
   return (
@@ -7,6 +8,9 @@ export default function Home() {
        <Navbar />
        <section>
         <HeroSection />
+       </section>
+       <section>
+        <ProblemSpace />
        </section>
     </main>
   );
