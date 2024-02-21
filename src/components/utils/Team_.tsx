@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Asum from "@/assets/images/team_asum.jpg";
 import { Team } from "../types";
 
 export default function TeamMembers({
@@ -17,7 +16,7 @@ export default function TeamMembers({
   );
 }
 
-function Team({ member }: { member: Team }) {
+function Team({ member, teamName }: { member: Team; teamName: string }) {
   return (
     <div className=" w-full 400px:w-[9cm] flex flex-col justify-center items-center">
       <Image
@@ -27,9 +26,13 @@ function Team({ member }: { member: Team }) {
         alt="name"
         className=" rounded-full border-4 border-primary_brown "
       />
-      <p className=" text-4xl mt-2 protest-strike-regular">Victor</p>
-      <p className=" text-[16px] poppins-regular">Asum</p>
-      <p className=" poppins-light-italic">Bsc. Computer Science</p>
+      <p className=" text-4xl mt-2 protest-strike-regular">
+        {member.first_name.split("")[0]}
+      </p>
+      <p className=" text-[16px] poppins-regular">
+        {member.last_name.split("")[0]}
+      </p>
+      <p className=" poppins-light-italic">{member.major}</p>
       <span className=" py-1 px-3 bg-red-500 rounded-md poppins-medium-italic text-[14px]">
         Wiki Team
       </span>
