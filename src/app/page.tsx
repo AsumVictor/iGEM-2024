@@ -1,25 +1,29 @@
-import Navbar from '@/components/sections/Navbar'
-import HeroSection from '@/components/sections/HeroSection'
-import ProblemSpace from '@/components/sections/ProblemSpace'
-import VideoSection from '@/components/sections/VideoSection';
-import   MeetTeam from  '@/components/sections/MeetTeam'
+import Navbar from "@/components/sections/Navbar";
+import HeroSection from "@/components/sections/HeroSection";
+import ProblemSpace from "@/components/sections/ProblemSpace";
+import VideoSection from "@/components/sections/VideoSection";
+import MeetTeam from "@/components/sections/MeetTeam";
+import StoryHeading from "@/components/sections/StoryHeading";
 
 export default function Home() {
   return (
     <main className="">
-       <Navbar />
-       <section>
+      <Navbar />
+      <section>
+        <StoryHeading />
+      </section>
+      <section>
         <HeroSection />
-       </section>
-       <section>
+      </section>
+      <section>
         <ProblemSpace />
-       </section>
-       <section>
+      </section>
+      <section>
         <VideoSection />
-       </section>
-       <section>
+      </section>
+      <section>
         <MeetTeam />
-       </section>
+      </section>
     </main>
   );
 }

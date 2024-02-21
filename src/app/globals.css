@@ -145,3 +145,16 @@
   );
   background-size: 19px 19px;
 }
+
+.story-bg {
+    background: linear-gradient(0deg, #000000 8%, #ffffff00 98%);
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

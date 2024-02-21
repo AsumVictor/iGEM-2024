@@ -14,7 +14,7 @@ function Navbar(): JSX.Element {
   };
 
   return (
-    <header className=" z-[99] bg-transparent backdrop-blur-lg relative w-full h-[1.8cm] flex justify-between items-center px-5">
+    <header className=" z-[99] bg-transparent relative w-full h-[1.8cm] flex justify-between items-center px-5">
       <Link href={'/'} className=" h-full justify-center items-center flex ">
         <Image
           src={Logo}

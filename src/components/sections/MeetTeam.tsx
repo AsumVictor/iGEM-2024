@@ -3,8 +3,16 @@ import TeamMembers from '../utils/Team_'
 import { team_members } from '../config'
 
 function MeetTeam() {
-    console.log(team_members)
-  return (
+
+    // Refactor the team data structure 
+    // let Team_members  = []
+    // Object.entries(team_members).map(([t_name, members])=>{
+    //     Team_members.push({
+    //         ...
+    //      })
+    // })
+
+    return (
     <section className=' w-full  py-10 poppins-extrabold'>
     <h3 className=' text-center text-3xl'>MEET THE TEAM</h3>
     {Object.entries(team_members).map(([t_name, members])=>(
