@@ -121,7 +121,11 @@
 
 .wave-backgroud {
   background-color: #e5e5f7;
-  background-image: radial-gradient(circle at center center, #ad363861, #e5e5f75e),
+  background-image: radial-gradient(
+      circle at center center,
+      #ad363861,
+      #e5e5f75e
+    ),
     repeating-radial-gradient(
       circle at center center,
       #ad363856,
@@ -131,4 +135,13 @@
       transparent 10px
     );
   background-blend-mode: multiply;
+}
+
+.green-dotted-bg {
+  background-color: #e5e5f700;
+  background-image: radial-gradient(
+    #45ae6b79 0.9500000000000001px,
+    #e5e5f700 0.9500000000000001px
+  );
+  background-size: 19px 19px;
 }

@@ -40,11 +40,11 @@ function ProblemSpace(): JSX.Element {
           </ul> However, 
           <ul className=" mt-2">
             <li className=" flex flex-row flex-wrap gap-2 items-center">
-              <div className="h-[0.4cm] w-[0.4cm] bg-primary_blue"></div>
+              <div className="h-[0.4cm] w-[0.4cm] bg-primary_green"></div>
               <span> Vibrio natriegens has shown promise in degrading PET plastic in laboratory studies</span>
             </li>
             <li className=" flex flex-row flex-wrap gap-2 items-center">
-              <div className="h-[0.4cm] w-[0.4cm] bg-primary_blue"></div>
+              <div className="h-[0.4cm] w-[0.4cm] bg-primary_green"></div>
               <span>
               Biocementation using microbes offers a sustainable and eco-friendly alternative to traditional concrete.
               </span>

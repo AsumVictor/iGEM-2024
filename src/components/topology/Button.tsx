@@ -8,7 +8,7 @@ type ButtonSize = "small" | "medium" | "large";
 function Button({
   type,
   title,
-  color = "bg-primary_blue",
+  color = "bg-primary_green",
   textColor = "text-white",
   textLabel = "Text Label",
   size = "small",
