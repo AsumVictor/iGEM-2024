@@ -4,4 +4,5 @@ export interface Team {
    first_name: string,
    last_name: string,
    major: string,
+   image: TODO
 }
