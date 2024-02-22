@@ -5,6 +5,7 @@ import VideoSection from "@/components/sections/VideoSection";
 import MeetTeam from "@/components/sections/MeetTeam";
 import StoryHeading from "@/components/sections/StoryHeading";
 import ProjectSpace from '@/components/sections/ProjectSpace'
+import ResultSection from '@/components/sections/ResultSection'
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
       </section>
       <section>
         <VideoSection />
+      </section>
+      <section>
+        <ResultSection />
       </section>
       <section>
         <MeetTeam />
