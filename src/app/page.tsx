@@ -1,4 +1,3 @@
-import Navbar from "@/components/sections/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import ProblemSpace from "@/components/sections/ProblemSpace";
 import VideoSection from "@/components/sections/VideoSection";
@@ -6,11 +5,12 @@ import MeetTeam from "@/components/sections/MeetTeam";
 import StoryHeading from "@/components/sections/StoryHeading";
 import ProjectSpace from '@/components/sections/ProjectSpace'
 import ResultSection from '@/components/sections/ResultSection'
+import Sponors from '@/components/sections/Sponors'
 
 export default function Home() {
   return (
     <main className="">
-      <Navbar />
+      
       <section>
         <StoryHeading />
       </section>
@@ -31,6 +31,9 @@ export default function Home() {
       </section>
       <section>
         <MeetTeam />
+      </section>
+      <section>
+        <Sponors />
       </section>
     </main>
   );
