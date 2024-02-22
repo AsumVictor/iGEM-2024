@@ -61,7 +61,7 @@ function ResultSection() {
             title="CTA"
             size="medium"
             textLabel="Read More"
-            color="bg-transparent font-semibold poppins-regular underline border-2 border-black text-black"
+            color="bg-black font-semibold poppins-regular underline border-2 border-black text-black"
           />
           
         </div>

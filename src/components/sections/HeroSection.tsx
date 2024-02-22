@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../topology/Button";
 import { Problem_soln_pitch } from "../data";
 import Image from "next/image";
-import waste_hero from "@/assets/images/plastic_waste_hero.png";
+import waste_hero from "@/assets/images/plastic_waste_hero2.png";
 
 function HeroSection(): JSX.Element {
   return (

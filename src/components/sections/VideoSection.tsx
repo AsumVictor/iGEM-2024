@@ -17,11 +17,11 @@ function VideoSection() {
   };
 
   return (
-    <section className="mt-20 green-dotted-bg-white px-3 py-10 flex justify-center items-center flex-col bg-primary_green">
+    <section className="mt-20 green-dotted-bg-white px-3 py-10 flex justify-center items-center flex-col ">
       <h2 className=" text-3xl poppins-extrabold mb-4 text-white">
         WATCH OUR VIDEO
       </h2>
-      <div className="flex justify-center items-center h-[12cm] w-full 600px:w-10/12 rounded-2xl p-2 bg-primary_green relative overflow-hidden">
+      <div className="flex justify-center items-center h-[12cm] w-full 600px:w-10/12 rounded-2xl p-2 bg-[#032125] relative overflow-hidden">
         <video
           ref={videoRef}
           autoPlay={false}

@@ -52,7 +52,7 @@ function Navbar(): JSX.Element {
 
       {/* Mobile & Tablet Navigation */}
       {isShow && (
-        <nav className=" bg-white absolute flex w-full left-0  650px:hidden flex-row  top-[1.8cm]">
+        <nav className=" bg-white absolute flex w-full left-0  650px:hidden flex-row  top-[1.8cm] py-5 px-10">
           <ul className=" flex flex-col gap-4 capitalize">
             <li>Home</li>
             <li>Research</li>
