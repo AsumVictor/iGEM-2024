@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "iGEMxAshesi2024",
   description: "Website for iGEM application proccess",
+  applicationName: "Asum Victor",
+  icons: ["/icon.png"],
+  appleWebApp: true,
   authors: [
     {
       url: "https://www.vrasum.tech",
