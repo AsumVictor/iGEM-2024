@@ -13,8 +13,8 @@ function ProblemSpace(): JSX.Element {
           What problems do we hope to solve?
         </h2>
         <p className=" text-justify poppins-regular mt-5">
-            {problem_statement}
-         
+          {problem_statement}
+
           <br />
           <ul className=" mt-2">
             <li className=" flex flex-row flex-wrap gap-2 items-center">
@@ -30,11 +30,10 @@ function ProblemSpace(): JSX.Element {
             <li className=" flex flex-row flex-wrap gap-2 items-center">
               <div className="h-[0.4cm] w-[0.4cm] bg-primary_brown"></div>
               <span>
-                Over 40% of the world's coastlines are affected by
-                erosion
+                Over 40% of the world's coastlines are affected by erosion
               </span>
             </li>
-          </ul> 
+          </ul>
         </p>
       </div>
     </section>

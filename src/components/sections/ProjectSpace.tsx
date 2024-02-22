@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { problem_statement } from "../config";
-import plasticWaste from "@/assets/images/plasttic waste.jpg";
+import vibro from "@/assets/images/Vibrio.jpg";
+import story from "@/assets/images/story_igem.jpg";
 
 function ProjectSpace(): JSX.Element {
   return (
@@ -12,7 +13,7 @@ function ProjectSpace(): JSX.Element {
       <div className="mt-10 py-20 gap-3 grid 750px:grid-cols-2">
         <div className="w-full flex flex-col justify-start items-center px-4">
           <h2 className=" font-bold text-3xl text-justify poppins-bold">
-            What problems do we hope to solve?
+            Our Solution
           </h2>
           <p className=" text-justify poppins-regular mt-5">
             We seek to solve the problem of plastic pollution on the beach and
@@ -27,7 +28,6 @@ function ProjectSpace(): JSX.Element {
               <li className=" flex flex-row flex-wrap gap-2 items-center">
                 <div className="h-[0.4cm] w-[0.4cm] bg-primary_green"></div>
                 <span>
-                  {" "}
                   Vibrio natriegens has shown promise in degrading PET plastic
                   in laboratory studies
                 </span>
@@ -44,9 +44,12 @@ function ProjectSpace(): JSX.Element {
         </div>
 
         <div className="  w-full flex justify-center items-start">
-          <Image src={plasticWaste} height={3} width={600} alt=" Image" />
+          <Image src={vibro} height={3} width={600} alt=" Image" />
         </div>
       </div>
+     <div className="w-full">
+        <Image src={story} height={2} width={49} alt="image" className=" w-full"/>
+     </div>
     </section>
   );
 }
