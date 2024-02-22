@@ -2,17 +2,11 @@ import Image from "next/image";
 import React from "react";
 import { Team } from "../types";
 
-export default function TeamMembers({
-  teamType,
-  members,
-}: {
-  teamType: string;
-  members: Team[];
-}) {
+export default function TeamMembers({ members }: { members: Team[] }) {
   return (
     <section className="w-full flex-wrap gap-x-2 gap-y-14 py-10 mt-10 flex justify-center items-center">
       {members.map((m) => (
-        <Team key={m.image} member={m} teamName={teamType} />
+        <Team key={m.image} member={m} teamName={m.teamtype} />
       ))}
     </section>
   );
@@ -23,8 +17,8 @@ function Team({ member, teamName }: { member: Team; teamName: string }) {
     <div className=" w-full 400px:w-[9cm] flex flex-col justify-center items-center">
       <Image
         src={member.image}
-        height={180}
-        width={180}
+        height={150}
+        width={150}
         alt="name"
         className=" rounded-full border-4 border-primary_brown "
       />
@@ -45,13 +39,13 @@ function TeamBadge({ name }: { name: string }): JSX.Element {
     "lab team": "bg-blue-500",
     "wiki team": "bg-primary_green",
     "modelling team": "bg-primary_brown",
-    "engineering team": "bg-primary-green",
+    "engineering team": "bg-primary_green",
     "entrepreneurship team": "bg-blue-500",
   };
 
   return (
     <span
-      className={` ${teamColors[name]} py-1 px-3  rounded-md poppins-medium-italic text-[14px] capitalize`}
+      className={` ${teamColors[name]} py-1 px-3  rounded-md poppins-medium-italic text-[14px] capitalize text-white`}
     >
       {name}
     </span>
