@@ -22,7 +22,12 @@ function VideoSection() {
         WATCH OUR VIDEO
       </h2>
       <div className="flex justify-center items-center h-[12cm] w-full 600px:w-10/12 rounded-2xl p-2 bg-primary_green relative overflow-hidden">
-        <video ref={videoRef} autoPlay={false} className=" h-full video">
+        <video
+          ref={videoRef}
+          autoPlay={false}
+          playsInline
+          className=" h-full video"
+        >
           <source src="/ashesi_igem_video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
