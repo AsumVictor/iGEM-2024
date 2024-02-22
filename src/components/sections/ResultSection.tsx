@@ -13,7 +13,7 @@ function ResultSection() {
         OUR PREDICTED LAB WORKS
       </h2>
       <div className="gap-3 grid 750px:grid-cols-2 mt-10">
-        <div className="w-full flex flex-col justify-start items-center px-4">
+        <div className="w-full flex flex-col justify-start items-center px-4 gay">
           <p className=" text-justify poppins-regular mt-5">
             Due to the inability to be in the lab this year, we performed
             experiments in silico using the SnapGene Software. After obtaining
@@ -34,8 +34,8 @@ function ResultSection() {
         </div>
       </div>
 
-      <div className="gap-3 grid 750px:grid-cols-2 py-10 mt-10">
-        <div className="w-full flex flex-col justify-start items-center px-4">
+      <div className="gap-3 grid 750px:grid-cols-2 py-10 mt-10 gap-y-20">
+        <div className="w-full flex flex-col justify-start items-center px-4 gap-y-7 ">
           <div className=" flex flex-row flex-wrap gap-2 items-center text-primary_green font-bold poppins-medium-italic">
             <div className="h-[0.4cm] w-[0.4cm] bg-primary_green"></div>
             <span>
@@ -44,7 +44,7 @@ function ResultSection() {
           </div>
           <Image src={result1} height={3} width={600} alt=" Image" />
         </div>
-        <div className="w-full flex flex-col justify-start items-center px-4">
+        <div className="w-full flex flex-col justify-start items-center px-4 gap-y-7">
           <div className=" flex flex-row flex-wrap gap-2 items-center text-primary_green font-bold poppins-medium-italic">
             <div className="h-[0.4cm] w-[0.4cm] bg-primary_green"></div>
             <span>
