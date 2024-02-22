@@ -14,12 +14,7 @@ function ProblemSpace(): JSX.Element {
         </h2>
         <p className=" text-justify poppins-regular mt-5">
             {problem_statement}
-          {/* We seek to solve the problem of plastic pollution on the beach and in
-          the sea as well as coastal erosion. The aim of our project is to
-          create a bio-brick from the processes of plastic degradation and
-          biocementation. To achieve this we hope to engineer a series of the
-          bacterium Vibrio natriegens, to degrade plastic (PET) and to induce
-          biocementation through the hydrolysis of urea respectively. */}
+         
           <br />
           <ul className=" mt-2">
             <li className=" flex flex-row flex-wrap gap-2 items-center">
@@ -39,20 +34,7 @@ function ProblemSpace(): JSX.Element {
                 erosion
               </span>
             </li>
-          </ul> However, 
-          <ul className=" mt-2">
-            <li className=" flex flex-row flex-wrap gap-2 items-center">
-              <div className="h-[0.4cm] w-[0.4cm] bg-primary_green"></div>
-              <span> Vibrio natriegens has shown promise in degrading PET plastic in laboratory studies</span>
-            </li>
-            <li className=" flex flex-row flex-wrap gap-2 items-center">
-              <div className="h-[0.4cm] w-[0.4cm] bg-primary_green"></div>
-              <span>
-              Biocementation using microbes offers a sustainable and eco-friendly alternative to traditional concrete.
-              </span>
-            </li>
-            
-          </ul>
+          </ul> 
         </p>
       </div>
     </section>
