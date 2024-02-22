@@ -146,6 +146,15 @@
   background-size: 19px 19px;
 }
 
+.green-dotted-bg-white {
+    background-color: #45ae6b;
+    background-image: radial-gradient(
+      #ffffff 0.9500000000000001px,
+      #e5e5f700 0.9500000000000001px
+    );
+    background-size: 19px 19px;
+  }
+
 .story-bg {
     background: linear-gradient(0deg, #000000 8%, #ffffff00 98%);
 }

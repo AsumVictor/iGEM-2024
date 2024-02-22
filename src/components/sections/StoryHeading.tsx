@@ -3,37 +3,12 @@ import React, { useEffect, useRef, useState } from "react";
 import Button from "../topology/Button";
 
 function StoryHeading() {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-
-  const togglePlay = () => {
-    if (isPlaying) {
-      videoRef.current!.pause();
-    } else {
-      videoRef.current!.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.muted = true;
-      videoRef.current
-        .play()
-        .then(() => {
-          setIsPlaying(true);
-        })
-        .catch((error: any) => {
-          setIsPlaying(false);
-          console.error("Autoplay failed:", error.message);
-        });
-    }
-  }, []); 
+ 
 
   return (
     <section className="relative w-full overflow-y-hidden h-[100vh] py-20 1240px:py-0 mt-[-1.8cm] flex justify-center items-center overflow-x-hidden ">
       <div className="w-full h-full absolute top-0 left-0">
-        <video ref={videoRef} muted autoPlay loop playsInline className=" video">
+        <video muted autoPlay loop playsInline className=" video">
           <source src="/Trim_.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
