@@ -1,5 +1,5 @@
 import { Team } from "./types";
-import Asum from "@/assets/images/team_asum.jpg";
+import Asum from "@/assets/images/quality.png";
 
 export const team_members: Team[] = [
   {
